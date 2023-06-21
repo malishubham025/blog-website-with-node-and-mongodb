@@ -1,0 +1,13 @@
+<%-include("partials/header")%>
+    <h1>home</h1>
+    <p><%=starting%></p>
+    <%console.log(kuchbhi);%>
+    <%for(var i=0;i<kuchbhi.length;i++){%>
+             <h1><%=kuchbhi[i].name%></h1>
+             <p><%=kuchbhi[i].content.substring(0,100)+"..."%></p><a href="/posts/<%=kuchbhi[i].name%>">Read more</a>
+         
+        <% }%>
+            
+   
+
+<%-include("partials/footer")%>
